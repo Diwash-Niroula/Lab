@@ -1,29 +1,22 @@
-// Step 1: Initialize variables for the sliders and display elements
-const redSlider = document.getElementById('redSlider');
-const greenSlider = document.getElementById('greenSlider');
-const blueSlider = document.getElementById('blueSlider');
-
-const redValue = document.getElementById('redValue');
-const greenValue = document.getElementById('greenValue');
-const blueValue = document.getElementById('blueValue');
+// Declare constants for the input slider elements and the page body
+const redSlider = document.getElementById('red');
+const greenSlider = document.getElementById('green');
+const blueSlider = document.getElementById('blue');
 const body = document.body;
-// Step 2: Function to update the background color
+
+// Function to update the background color based on the slider values
 function updateBackgroundColor() {
-    const red = redSlider.value;
-    const green = greenSlider.value;
-    const blue = blueSlider.value;
+    const redValue = redSlider.value;
+    const greenValue = greenSlider.value;
+    const blueValue = blueSlider.value;
 
-    // Update the body background color
-    body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-
-    // Update displayed values
-    redValue.textContent = red;
-    greenValue.textContent = green;
-    blueValue.textContent = blue;
+    body.style.backgroundColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
 }
-// Step 3: Add event listeners to the sliders
+
+// Event listeners for the sliders
 redSlider.addEventListener('input', updateBackgroundColor);
 greenSlider.addEventListener('input', updateBackgroundColor);
 blueSlider.addEventListener('input', updateBackgroundColor);
-// Step 4: Initialize background color on page load
+
+// Initial call to set the background color on page load
 updateBackgroundColor();
