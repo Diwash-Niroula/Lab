@@ -22,6 +22,6 @@ function updateBackgroundColor() {
     blueValue.textContent = blue;
 }
 // Step 3: Add event listeners to the sliders
-redSlider.addEventListener('input' updateBackgroundColor);
+redSlider.addEventListener('input', updateBackgroundColor);
 greenSlider.addEventListener('input', updateBackgroundColor);
-blueSlider.addEventListener('input', updateBackgroundColor)
+blueSlider.addEventListener('input', updateBackgroundColor);
