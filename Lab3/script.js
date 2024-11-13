@@ -42,3 +42,28 @@ function createCar() {
     displayCar(newCar);
     document.getElementById("carForm").reset();
 }
+// Function to display car details in the designated container
+function displayCar(car) {
+    const carDisplayContainer = document.getElementById("carDisplayContainer");
+
+    // Create a new div for each car's information
+    const carInfoDiv = document.createElement("div");
+    carInfoDiv.className = "car-info";
+    carInfoDiv.innerHTML = `
+        <h2>${car.model}</h2>
+        <p><strong>Brand:</strong> ${car.brand}</p>
+        <p><strong>Color:</strong> ${car.color}</p>
+        <p><strong>Packaging:</strong> ${car.packaging}</p>
+        <p><strong>Scale:</strong> ${car.scale}</p>
+        <p><strong>Vehicle Type:</strong> ${car.type}</p>
+        <p><strong>Material:</strong> ${car.material}</p>
+        <p><strong>Price:</strong> $${car.price}</p>
+        <p><strong>Release Date:</strong> ${car.releaseDate}</p>
+        <p><strong>Dimensions:</strong> ${car.dimensions}</p>
+        <p><strong>Weight:</strong> ${car.weight}</p>
+        <p><strong>Features:</strong> ${car.features.join(", ")}</p>
+    `;
+
+    // Append car information to the display container
+    carDisplayContainer.appendChild(carInfoDiv);
+}
