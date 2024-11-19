@@ -38,7 +38,9 @@ function populateHeader() {
     const h1 = document.createElement('h1');
     h1.textContent = jsonObj.companyName;
     // Grab the company name from the JSON object and use it for the text node
-    
+    const para = document.createElement('p');
+    para.textContent = `Head Office: ${jsonObj.headOffice} | Established: ${jsonObj.established}`;
+
     // Inject the complete H1 element into the DOM, inside the HEADER
     
 };
