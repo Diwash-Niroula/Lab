@@ -42,7 +42,8 @@ function populateHeader() {
     para.textContent = `Head Office: ${jsonObj.headOffice} | Established: ${jsonObj.established}`;
 
     // Inject the complete H1 element into the DOM, inside the HEADER
-    
+    header.appendChild(h1);
+    header.appendChild(para);
 };
 /* STEP 10b: Assemble the showTopFlavors() function */
 function showTopFlavors() {
