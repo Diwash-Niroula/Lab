@@ -11,7 +11,12 @@ async function populate(){
     // STEP 5: Use the new URL to create a new request object
     const request = new Request(requestURL);
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
-    
+    const Response = await fetch(request);
+
+    //error handeling in fetching 
+    if(!Response.ok){
+        throw new Error (`Http erroe! status: $(response.status)`);
+    }
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
     
     // STEP 8: Output the iScream JSON object to the console 
