@@ -2,7 +2,6 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
 
-
 // STEP 3a: Create the asynchronous function populate()
 
     // Introducing JavaScript Object Notation (JSON): https://json.org/
