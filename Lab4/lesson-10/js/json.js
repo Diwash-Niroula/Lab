@@ -20,7 +20,7 @@ async function populate(){
     // STEP 7: Capture the returned Response object and covert to a JSON object using json()
     const jsonObj = await response.json();
     // STEP 8: Output the iScream JSON object to the console 
-    
+    console.log(jsonObj);
     // STEP 9a: Invoke the populateHeader function here, then build it below
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
