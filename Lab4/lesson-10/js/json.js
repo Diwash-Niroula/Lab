@@ -49,6 +49,7 @@ function populateHeader() {
 function showTopFlavors() {
     // STEP 10c: Attache the JSON topFlavors object to a variable
     //let topFlavors = jsonObj.topFlavors;
+    const topFlavors = jsonObj.topFlavors;
     // STEP 10d: Loop through the topFlavors object
     for (let i = 0; i < topFlavors.length; i ++) {
         // STEP 10e: build HTML elements for the content
