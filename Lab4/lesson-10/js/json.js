@@ -3,7 +3,7 @@ const header = document.querySelector('header');
 const section = document.querySelector('section');
 
 // STEP 3a: Create the asynchronous function populate()
-
+async function populate(){
     // Introducing JavaScript Object Notation (JSON): https://json.org/
     // STEP 4: Store the URL of a JSON file in a variable */
     
@@ -20,7 +20,7 @@ const section = document.querySelector('section');
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
     
 
-
+}
 // STEP 3b: Call the populate() function
 
 
