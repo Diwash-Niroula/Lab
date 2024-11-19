@@ -5,8 +5,9 @@ const section = document.querySelector('section');
 // STEP 3a: Create the asynchronous function populate()
 async function populate(){
     // Introducing JavaScript Object Notation (JSON): https://json.org/
+   try{
     // STEP 4: Store the URL of a JSON file in a variable */
-    
+    const requestURL = 'js/i-scream.json';
     // STEP 5: Use the new URL to create a new request object
     
     // STEP 6: Make a network request with the fetch() function, which returns a Response object
@@ -18,7 +19,9 @@ async function populate(){
     // STEP 9a: Invoke the populateHeader function here, then build it below
     
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
-    
+   }catch (error){
+
+   }
 
 }
 // STEP 3b: Call the populate() function
