@@ -83,7 +83,7 @@ function showTopFlavors() {
         article.appendChild(ul);
         article.appendChild(img);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
-        
+        section.appendChild(article);
     };
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
