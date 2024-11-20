@@ -61,7 +61,11 @@ function showTopFlavors() {
         const img = document.createElement('img');
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-        
+        h2.textContent = topFlavors[i].name;
+        para1.textContent = `Calories: ${topFlavors[i].calories}`;
+        para2.textContent = `Type: ${topFlavors[i].type}`;
+        img.src = `images/${topFlavors[i].image}`;
+        img.alt = topFlavors[i].name;
 
         // STEP 10g: Build a loop for the ingredients array in the JSON
         
