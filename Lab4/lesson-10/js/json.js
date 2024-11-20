@@ -70,7 +70,12 @@ function showTopFlavors() {
         // STEP 10g: Build a loop for the ingredients array in the JSON
         
             // add the ingredient to the UL
-
+            const ingredients = topFlavors[i].ingredients;
+            for (let j = 0; j < ingredients.length; j++) {
+                const li = document.createElement('li');
+                li.textContent = ingredients[j];
+                ul.appendChild(li);
+            }
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
         
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
