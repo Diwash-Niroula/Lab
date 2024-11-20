@@ -77,7 +77,11 @@ function showTopFlavors() {
                 ul.appendChild(li);
             }
         // STEP 10h: Append each of the above HTML elements to the ARTICLE element
-        
+        article.appendChild(h2);
+        article.appendChild(para1);
+        article.appendChild(para2);
+        article.appendChild(ul);
+        article.appendChild(img);
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         
     };
